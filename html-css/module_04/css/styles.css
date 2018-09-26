@@ -1,0 +1,268 @@
+html{
+	box-sizing:border-box;
+}
+
+*,
+*::before, 
+*::after{
+	box-sizing: inherit;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.clearfix::after {
+    display: table;
+    content:'';
+    clear: both;
+}
+
+.wrapper {
+    width: 1140px;
+    margin: 0px auto;
+    padding-top: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 85px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+ }
+
+/*HEADER*/
+.site-logo {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 30px;
+    color: #555252;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.site-logo::first-letter {
+    color: #1abc9c;
+    font-weight: bold;
+}
+
+.page-header {
+    margin: 0px;
+    margin-bottom: 110px;
+}
+
+.menu-section {
+    float: right;
+    margin: 0px;
+    padding: 0px; 
+    font-weight: bold;
+    list-style: none;
+}
+
+.menu-section a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #312727;
+}
+
+.menu-section a:hover,
+.menu-section a:focus {
+  color: rgb(26, 188, 156);
+}
+
+.menu-items {
+    float: left;
+    display: block;
+    margin-right: 30px;
+
+}
+
+.menu-section li:last-child {
+	margin-right: 0;  
+	
+}
+
+/*TITLE H2*/
+
+.title {
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+    color: #555252;
+    line-height: 40px;
+    margin-bottom: 90px;
+
+}
+
+h2::after {
+    display: block;
+    height: 7px;
+    width: 160px;
+    background-color: rgb(26, 188, 156);
+    content: '';
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+
+/*BLOG SECTION*/
+
+.blog {
+    margin: 0px;
+    padding:0px;
+}
+
+.blog-section {
+    margin: 0px;
+    padding:0px;
+    list-style: none;
+}
+
+.blog-item {
+    float: left;
+    margin: 0px;
+    width: 350px;
+    margin-right: 30px;
+}
+
+.blog-item:nth-last-child(3n+1) {
+    margin-right: 0px;
+}
+
+.blog-item-title {
+    margin: 0px;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #555252;
+    margin-bottom: 30px;
+}
+
+.blog-item-title::after {
+    display: block;
+    height: 2px;
+    width: 135px;
+    background-color: rgb(26, 188, 156);
+    content: '';
+    margin-top: 15px;
+
+}
+
+.blog-item-descr {
+    margin: 0px;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+
+}
+
+.block-item-image {
+    margin-bottom: 15px;
+}
+
+/*BUTTON*/
+
+.blog-button {
+    margin: 0px;
+    padding: 0px;
+    width: 160px;
+    height: 50px;
+    background-color: #4ec6ab;
+    color: white;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.blog-button:hover {
+        background-color: #68f8d9;
+    }
+
+
+
+/*FEATURED SECTION*/
+
+.featured {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 105px;
+}
+
+.featured-product {
+    margin: 0px;
+    padding: 0px;
+}
+
+.featured-item {
+    float: left;
+    margin-right: 30px;
+    width: 255px;
+    height: 320px;
+    list-style: none;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.featured-product li:nth-child(4n) {
+	margin-right: 0px;  	
+}
+
+.featured-product li:nth-last-child(-n+4) {
+    margin-bottom: 0px;
+}
+
+.featured-descr {
+    position: absolute;
+    bottom: 0;
+    text-transform: uppercase;
+}
+
+.featured-item-name {
+    width: 200px;
+    background-color: #2c2b2b;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.featured-item-price {
+    width: 55px;
+    background-color: #8c8c8c;
+    padding: 0px;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.featured-product li:hover .featured-item-name{
+    background-color:  rgb(26, 188, 156);
+  }
+
+.featured-product li:hover .featured-item-price{
+    background-color: #7fd9c7;
+  }
+
+ .featured-item {
+    cursor:pointer;
+ }
+
+.featured-item-name,
+.featured-item-price {
+    float: left;
+    margin: 0;
+    font-size: 18px;
+    color:#fff;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    font-weight: 600;

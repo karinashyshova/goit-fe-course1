@@ -1,0 +1,164 @@
+html {
+	box-sizing: border-box;
+
+}
+
+*,
+*::before, 
+*::after {
+box-sizing: inherit;
+
+}
+
+body {
+	margin: 0px;
+	font-family: 'Playfair Display SC';
+}
+
+.wrapper {
+    padding-top: 44px;
+	width: 900px;
+	margin: 0 auto;
+	padding-bottom: 25px;
+}
+
+.page-header {
+	margin-bottom: 105px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border:0;
+    padding: 0;
+    white-space:nowrap;
+    clip-path:inset(100%);
+    clip: rect(0 0 0 0);
+    overflow:hidden;
+}
+
+
+
+ul {
+	padding: 0;
+	margin: 0;	
+}
+
+.content-item {
+	font-size: 0px;
+}
+
+.content-list-item:nth-child(2n) {
+	margin-right: 0px;
+}
+
+
+
+
+
+img {
+    display:block;
+    max-width: 100%;
+	height: auto;
+}
+
+.section-image {
+	margin-bottom: 30px;
+}
+
+.section-title {
+	font-size: 30px;
+	color: rgb(83, 80, 80);
+ }
+
+li {
+	list-style-type: none;
+
+}
+
+.section-about {
+	text-transform: uppercase;
+	color:#626262;
+	font-size: 14px;
+	margin: 0px;
+	margin-bottom: 30px;
+}
+
+.section-text {
+	margin: 0px;
+}
+
+.section-title {
+	font-weight: normal;
+	margin: 0px;
+	margin-bottom: 40px;
+} 
+
+.content-list-item {
+	display: inline-block;
+	font-size: 14px;
+	padding: 0px;
+	margin: 0px;
+	margin-right: 60px;
+	margin-bottom: 130px;
+	width: 420px;
+	}
+
+.main-button {
+	display: block;
+	font-family: 'Playfair Display SC';
+	font-size: 20px;
+	color: rgb(83, 80, 80);
+	background-color: white;
+	border: 1px solid rgba(0,0,0,.4);
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: center;
+	cursor: pointer;
+	margin-top: 60px;
+}
+
+.main-button:hover {
+	background-color: #b4b0b0;
+}
+
+.menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	font-size: 0;
+}
+
+.menu li:last-child {
+	margin-right: 0;  
+	
+}
+
+.menu-item {
+	margin-right: 50px;
+	display: inline-block;
+}
+.menu a {
+	display: block;
+	color:#626262;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+  }
+  
+  .menu a:hover,
+  .menu a:focus {
+	color: lightgray;
+  }
+  
+  .content-list-item:nth-last-child(-n+2) {
+	margin-bottom:0;
+}
