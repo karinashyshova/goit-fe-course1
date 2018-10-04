@@ -22,8 +22,9 @@ body {
 }
 
 .wrapper {
-    width: 1600px;
+    width: 1140px;
     margin: 0 auto;
+    padding: 15px;
     margin-top: 45px;
 }
 
@@ -39,39 +40,34 @@ input[type="radio"].visually-hidden{
     white-space:nowrap;
     clip-path:inset(100%);
     clip: rect(0 0 0 0);
-    overflow:hidden;
+    overflow: hidden;
 }
 
 /*SLIDER*/
 
-.container {
+.slider {
     position: relative;
-}
-
-.slider-image {
-
-    display: block;
-    height: 600px;
-    padding:0;
-}
-
-.slider-image-list {
-    list-style: none;
+    min-height: 600px;
+    background-image: url(../img/slider.jpg);
+    background-repeat: no-repeat;
     margin: 0 auto;
+    margin-bottom: 100px;
+
+}
+
+
+.slider-title-list {
+    list-style: none;
+    margin: 0;
     padding:0;
-    height: 600px;
+    position: absolute;
+    top: 215px;
+    left: 28%;
 }
-
-.slider-image-item {
-    height: 600px;
-
-}
-
 
 .slider-button-item {
     position: absolute;
     z-index: 1;
-    top: 225px;
     width: 104px;
     height: 104px;
     margin: 0px;
@@ -79,39 +75,41 @@ input[type="radio"].visually-hidden{
     background-color: #4ec6ab;
     opacity: 0.65;
     border: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 45%;
+    transform: translateY(-50%);
 }
 
 .slider-button-prev {
     left: 245px;
-    
+    background-image: url(../img/prev.png);
 }
 
 .slider-button-next {
     right: 245px;
-
+    background-image: url(../img/next.png);
 }
 
-.slider-header {
-    position: absolute;
-    display: inline-block;
-    margin-top: 215px;
-    margin-left: 420px;
-    z-index: 1;   
-
+.section-title {
+    position: relative;
+    min-height: 600px;
 }
 
-.big-header {
+
+.slider-title-big-item {
     color: #ffffff;
     font-size: 60px;
     font-weight: bold;
     text-transform: uppercase;
     margin: 0px;
-    line-height: 39px;
+    line-height: 40px;
     margin-bottom: 40px;
     letter-spacing: -1.2px;
 }
 
-.little-header {
+.slider-title-little-item {
     color: #ffffff;
     font-size: 24px;
     font-weight: 300;
@@ -119,10 +117,6 @@ input[type="radio"].visually-hidden{
     margin: 0px;
     line-height: 20px;
 
-}
-
-.slider {
-    margin-bottom: 100px;
 }
 
 /*HEADER*/
@@ -146,6 +140,7 @@ input[type="radio"].visually-hidden{
 .page-header {
     margin: 0px;
     margin-bottom: 37px;
+    margin-top: 40px;
 
 }
 
@@ -185,6 +180,7 @@ input[type="radio"].visually-hidden{
 .menu-section li:first-child {
     padding-left: 0;
 }
+
 
 /*TITLE H2*/
 
@@ -282,6 +278,93 @@ h2::after {
     padding-bottom: 7px;
     padding-left: 10px;
     font-weight: 600;
+}
+
+/* COLLECTION HOVER*/
+
+.collection-hover {
+    position: absolute;
+    display: inline-block;
+    border-width: 10px;
+    border-color: rgb( 255, 255, 255 );
+    border-style: solid;
+    background-color: rgb( 0, 0, 0 );
+    height: 261px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+}
+
+.collection-hover:hover {
+    opacity: 0.549;
+
+}
+
+.hover-list {
+    position: absolute;
+    margin: 0 auto;
+    padding: 0;
+    left: 35px;
+    top: 75px;
+}
+
+.collection-box-item .collection-hover li {
+    margin: 0 auto;
+    padding: 0;
+    float: left;
+    list-style: none;
+    border-width: 1px;
+    border-color: rgb( 255, 255, 255 );
+    border-style: solid;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hover-icon {
+    background: none;
+    width: 48px;
+    height: 48px;
+}
+
+.collection-hover li:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.hover-add-button {
+    width: 164px;
+    height: 48px;
+    background-color: #323232;
+    border: none;
+    background-image: url(../img/cart.png);
+
+}
+
+.cart-text {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: white;
+}
+
+.hover-like {
+    background-image: url(../img/like.png);
+}
+
+.hover-shuffle {
+    background-image: url(../img/shuffle.png);
+}
+
+.hover-time {
+    background-image: url(../img/time.png);
+}
+
+.hover-list li:hover {
+    background-color: #1abc9c;
+
 }
 
 
