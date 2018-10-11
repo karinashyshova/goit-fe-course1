@@ -24,8 +24,8 @@ body {
 .wrapper {
     width: 1140px;
     margin: 0 auto;
-    padding: 15px;
-    margin-top: 45px;
+    padding: 0 15px;
+
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -51,7 +51,6 @@ input[type="radio"].visually-hidden{
     background-image: url(../img/slider.jpg);
     background-repeat: no-repeat;
     margin: 0 auto;
-    margin-bottom: 100px;
 
 }
 
@@ -83,12 +82,12 @@ input[type="radio"].visually-hidden{
 }
 
 .slider-button-prev {
-    left: 245px;
+    left: 0;
     background-image: url(../img/prev.png);
 }
 
 .slider-button-next {
-    right: 245px;
+    right: 0;
     background-image: url(../img/next.png);
 }
 
@@ -119,6 +118,13 @@ input[type="radio"].visually-hidden{
 
 }
 
+.slider-title-list {
+    top: 45%;
+    left: 18%;
+    transform: translateY(-50%); 
+    width: 840px;
+}
+
 /*HEADER*/
 
 .site-logo {
@@ -128,8 +134,12 @@ input[type="radio"].visually-hidden{
     color: #555252;
     text-transform: uppercase;
     line-height: 20px;
-    margin-left: 245px;
 
+}
+
+.navigation {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .site-logo::first-letter {
@@ -137,20 +147,15 @@ input[type="radio"].visually-hidden{
     font-weight: bold;
 }
 
-.page-header {
-    margin: 0px;
-    margin-bottom: 37px;
-    margin-top: 40px;
-
-}
-
 .menu-section {
     float: right;
+    font-size: 14px;
     margin: 0px;
     padding: 0px; 
-    font-weight: bold;
+    font-weight: 700;
     list-style: none;
-    margin-right: 245px;
+    line-height: 14px;
+   
 }
 
 .menu-section a{
@@ -169,16 +174,16 @@ input[type="radio"].visually-hidden{
 .menu-items {
     float: left;
     display: block;
-    padding-right: 17px;
-    padding-left: 17px;
+    margin-right: 17px;
+    margin-left: 17px;
 }
 
 .menu-section li:last-child {
-    padding-right: 0;
+    margin-right: 0;
 }
 
 .menu-section li:first-child {
-    padding-left: 0;
+    margin-left: 0;
 }
 
 
@@ -213,7 +218,9 @@ h2::after {
 .collection {
     margin: 0;
     padding: 0px;
-    margin-bottom: 105px;
+    padding-bottom: 100px; 
+    background-color: #e9f0fd;
+    padding-top: 100px; /*Если делаю марджин, получается белый фон... А если не ставлю вообще, прижимается к слайдеру*/
 }
 
 .collection-box {
@@ -251,6 +258,8 @@ h2::after {
     background-color: #2c2b2b;
     padding-left: 14px;
     padding-right: 14px;
+    padding-top: 8px; 
+    padding-bottom: 8px;
 }
 
 .collection-box-item-price {
@@ -284,50 +293,41 @@ h2::after {
 
 .collection-hover {
     position: absolute;
-    display: inline-block;
     border-width: 10px;
-    border-color: rgb( 255, 255, 255 );
-    border-style: solid;
-    background-color: rgb( 0, 0, 0 );
-    height: 261px;
+    border: 10px solid white;
+    background-color: #737373;
+    height: 282px;
     width: 100%;
     top: 0px;
     left: 0px;
     opacity: 0;
 }
 
-.collection-hover:hover {
-    opacity: 0.549;
-
+.collection-box-item:hover .collection-hover {
+    opacity: 0.549
 }
 
-.hover-list {
-    position: absolute;
-    margin: 0 auto;
-    padding: 0;
-    left: 35px;
-    top: 75px;
-}
-
-.collection-box-item .collection-hover li {
-    margin: 0 auto;
-    padding: 0;
+.collection-hover li {
     float: left;
-    list-style: none;
-    border-width: 1px;
-    border-color: rgb( 255, 255, 255 );
-    border-style: solid;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-position: center;
+    padding: 0px;
+    margin-right: 8px;
+    list-style: none;   
+     
 }
 
-.hover-icon {
-    background: none;
-    width: 48px;
-    height: 48px;
+
+
+.hover-list a {
+    display: block;
+    width: 50px; 
+    height: 50px; 
+    border: 1px solid rgb(255, 255, 255); 
+    
+    /*
+        Пыталась здесь поставить, но так не работает почему-то)))   
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    */
 }
 
 .collection-hover li:nth-child(3n) {
@@ -335,12 +335,13 @@ h2::after {
 }
 
 .hover-add-button {
-    width: 164px;
-    height: 48px;
-    background-color: #323232;
-    border: none;
     background-image: url(../img/cart.png);
-
+    background-position: 10% 50%, 80% 50%;
+    background-color: #323232; 
+    border: 1px solid #fff;
+    width: 166px;
+    background-repeat: no-repeat;
+    padding: 0px;
 }
 
 .cart-text {
@@ -352,18 +353,25 @@ h2::after {
 
 .hover-like {
     background-image: url(../img/like.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .hover-shuffle {
     background-image: url(../img/shuffle.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .hover-time {
     background-image: url(../img/time.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .hover-list li:hover {
-    background-color: #1abc9c;
+    background-color: rgb(26, 188, 156);
+    border: 1px solid rgb(26, 188, 156);
 
 }
 
@@ -372,8 +380,6 @@ h2::after {
 
 .page-footer {
     display: block;
-    height: 85px;
-    background-color: #323232;
 }
 
 .page-footer-descr {
@@ -383,9 +389,18 @@ h2::after {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
+    background-color: #323232;
 }
 
 .link {
     color: #41a190;
     text-decoration: none;
+}
+
+footer p {
+    margin: 0; 
+    padding: 36px 0;
+    text-align: center; 
+    font-size: 16px; 
+    line-height: 12px;
 }

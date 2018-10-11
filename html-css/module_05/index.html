@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
 </head>
 <body>
-    <header class="page-header">            
+    <header class="page-header wrapper">            
         <nav class="navigation">
             <a href="#" class="site-logo">
                 Март
@@ -27,10 +27,10 @@
         </nav>
     </header>
     <main>       
-        <section>
+        <section class="slider-section">
             <h1 class="visually-hidden">Some title</h1>
                 <div class="slider">
-                    <div class="section-titles">
+                    <div class="section-title">
                         <button class="slider-button-item slider-button-prev"></button>
                         <button class="slider-button-item slider-button-next"></button>
                         <ul class="slider-title-list">
@@ -43,7 +43,8 @@
                 </div>
         </section>
         
-        <section class="collection clearfix">
+        <section class="collection">
+            <div class="wrapper">
             <h2 class="collection-title">New Collection</h2>
             <ul class="collection-box clearfix">
                 <li class="collection-box-item">
@@ -52,19 +53,19 @@
                         <p class="collection-box-item-name">Blue Tshirt</p>
                         <p class="collection-box-item-price">$26</p>
                     </div>
-                    <div class="collection-hover" id="hover">
-                        <ul class="hover-list clearfix">
+                    <div class="collection-hover">
+                        <ul class="hover-list clearfix"> <!-- Здесь выдает слева большой марджин, не могу его убрать -->
                             <li class="hover-icon hover-like">
-                                <a href="#"></a> 
+                                <a href="#"><span class="visually-hidden"></span></a> 
                             </li>
                             <li class="hover-icon hover-shuffle">
-                                <a href="#"></a>
+                                <a href="#"><span class="visually-hidden"></span></a>
                             </li>
                             <li class="hover-icon hover-time">
-                                <a href="#"></a>
+                                <a href="#"><span class="visually-hidden"></span></a>
                             </li>
                             <li class="hover-add-button">
-                                <a href="#"><p class="cart-text">Add to cart</p></a>
+                                <a href="#"><span class="visually-hidden"></span></a>
                             </li>
                         </ul>   
                     </div>
@@ -75,19 +76,19 @@
                         <p class="collection-box-item-name">Woman Shirt</p>
                         <p class="collection-box-item-price">$31</p>
                     </div>
-                    <div class="collection-hover" id="hover">
+                    <div class="collection-hover">
                         <ul class="hover-list clearfix">
                             <li class="hover-icon hover-like">
-                                <a href="#"></a> 
+                                <a href="#"><span class="visually-hidden"></span></a> 
                             </li>
                             <li class="hover-icon hover-shuffle">
-                                <a href="#"></a>
+                                <a href="#"><span class="visually-hidden"></span></a>
                             </li>
                             <li class="hover-icon hover-time">
-                                <a href="#"></a>
+                                <a href="#"><span class="visually-hidden"></span></a>
                             </li>
                             <li class="hover-add-button">
-                                    <a href="#"><p class="cart-text">Add to cart</p></a>
+                                <a href="#"><span class="visually-hidden"></span></a>
                             </li>
                         </ul>   
                     </div>
@@ -98,19 +99,19 @@
                         <p class="collection-box-item-name">Yellow Tshirt</p>
                         <p class="collection-box-item-price">$21</p>
                     </div>
-                    <div class="collection-hover" id="hover">
+                    <div class="collection-hover">
                         <ul class="hover-list clearfix">
                             <li class="hover-icon hover-like">
-                                <a href="#"></a> 
+                                <a href="#"><span class="visually-hidden"></span></a> 
                             </li>
                             <li class="hover-icon hover-shuffle">
-                                <a href="#"></a>
+                                <a href="#"><span class="visually-hidden"></span></a>
                             </li>
                             <li class="hover-icon hover-time">
-                                <a href="#"></a>
+                                <a href="#"><span class="visually-hidden"></span></a>
                             </li>
                             <li class="hover-add-button">
-                                    <a href="#"><p class="cart-text">Add to cart</p></a>
+                                <a href="#"><span class="visually-hidden"></span></a>
                             </li>
                         </ul>   
                     </div>
@@ -121,32 +122,34 @@
                         <p class="collection-box-item-name">Cool Lingerie</p>
                         <p class="collection-box-item-price">$56</p>
                     </div>
-                    <div class="collection-hover" id="hover">
+                    <div class="collection-hover">
                         <ul class="hover-list clearfix">
                             <li class="hover-icon hover-like">
-                                <a href="#"></a> 
+                                <a href="#"><span class="visually-hidden"></span></a> 
                             </li>
                             <li class="hover-icon hover-shuffle">
-                                <a href="#"></a>
+                                <a href="#"><span class="visually-hidden"></span></a>
                             </li>
                             <li class="hover-icon hover-time">
-                                <a href="#"></a>
+                                <a href="#"><span class="visually-hidden"></span></a>
                             </li>
                             <li class="hover-add-button">
-                                    <a href="#"><p class="cart-text">Add to cart</p></a>
+                                <a href="#"><span class="visually-hidden"></span></a>
                             </li>
                         </ul>   
                     </div>
                 </li>
+                </ul>
+                </div>
             </section>
         </main>
         <footer>
-            <section class="page-footer">
+            <div class="page-footer wrapper">
                 <p class="page-footer-descr">All Rights Reserved © Dokan | Designed 
                     <a href="#" class="link"> ThemenGraph
                     </a>
                 </p>
-            </section>
+            </div>
         </footer>
 </body>
 </html>
