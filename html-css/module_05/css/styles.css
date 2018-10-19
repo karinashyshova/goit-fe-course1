@@ -113,7 +113,6 @@ input[type="radio"].visually-hidden{
     line-height: 40px;
     margin-bottom: 40px;
     letter-spacing: -1.2px;
-    background: 0;
 }
 
 .slider-title-little-item {
@@ -346,7 +345,7 @@ h2::after {
 }
 
 .hover-add-button {
-    background-image: url(../img/fon.png);
+    background-image: url(../image/cart.png), url(../image/add.jpg);
 }
 
 .hover-add-button .hover-list{
