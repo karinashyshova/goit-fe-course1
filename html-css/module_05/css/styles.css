@@ -175,7 +175,7 @@ input[type="radio"].visually-hidden{
     float: left;
     display: block;
     margin-right: 17px;
-    margin-left: 17px;
+
 }
 
 .menu-section li:last-child {
@@ -294,17 +294,17 @@ h2::after {
 .collection-hover {
     position: absolute;
     border-width: 10px;
-    border: 10px solid white;
-    background-color: #737373;
     height: 282px;
-    width: 100%;
+    width: 255px;
     top: 0px;
     left: 0px;
     opacity: 0;
+    border: 10px solid rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.549);
 }
 
 .collection-box-item:hover .collection-hover {
-    opacity: 0.549
+    opacity: 1;
 }
 
 .collection-hover li {
@@ -312,30 +312,33 @@ h2::after {
     padding: 0px;
     margin-right: 8px;
     list-style: none;   
-     
 }
 
-
+.hover-list {
+    position: absolute;
+    margin: 0 auto;
+    padding: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .hover-list a {
     display: block;
     width: 50px; 
     height: 50px; 
     border: 1px solid rgb(255, 255, 255); 
-    
-    /*
-        Пыталась здесь поставить, но так не работает почему-то)))   
+    padding: 0px;
+    position: absolute; 
+    background-position: center;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
-    */
 }
 
 .collection-hover li:nth-child(3n) {
     margin-right: 0px;
 }
 
-.hover-add-button {
-    background-image: url(../img/cart.png);
+/*.hover-add-button {
     background-position: 10% 50%, 80% 50%;
     background-color: #323232; 
     border: 1px solid #fff;
@@ -349,52 +352,50 @@ h2::after {
     padding: 0;
     text-transform: uppercase;
     color: white;
-}
+}*/
 
 .hover-like {
     background-image: url(../img/like.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
 .hover-shuffle {
     background-image: url(../img/shuffle.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
 .hover-time {
     background-image: url(../img/time.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
-.hover-list li:hover {
+.hover-list a:hover {
     background-color: rgb(26, 188, 156);
     border: 1px solid rgb(26, 188, 156);
-
 }
 
+.hover-add-button {
+    background-image: url(../img/cart.png);
+}
 
 /* FOOTER */
 
-.page-footer {
-    display: block;
+.footer {
+    background-color: #323232;
+    position: relative;
 }
 
 .page-footer-descr {
     margin: 0;
     text-align: center;
-    padding-top: 32px;
+    padding: 32px 0;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    background-color: #323232;
+
 }
 
 .link {
     color: #41a190;
     text-decoration: none;
+    display: inline-block;
 }
 
 footer p {
