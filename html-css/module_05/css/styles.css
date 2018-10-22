@@ -55,10 +55,9 @@ input[type="radio"].visually-hidden{
 }
 
 .background {
-    background-image: url(../img/fon.png);
-    position: absolute;
-    opacity: 0.5;
     width: 100%;
+    opacity: 0.8;
+
 }
 
 
@@ -227,7 +226,7 @@ h2::after {
     padding: 0px;
     padding-bottom: 100px; 
     background-color: #e9f0fd;
-    padding-top: 100px; /*Если делаю марджин, получается белый фон... А если не ставлю вообще, прижимается к слайдеру*/
+    padding-top: 100px;
 }
 
 .collection-box {
@@ -344,17 +343,15 @@ h2::after {
     margin-right: 0px;
 }
 
-.hover-add-button {
-    background-image: url(../image/cart.png), url(../image/add.jpg);
-}
 
-.hover-add-button .hover-list{
+.hover-list .hover-add-button {
+    background-image: url(../image/cart.png), url(../image/add.jpg);
     background-position: 10% 50%, 80% 50%;
     background-color: #323232; 
     border: 1px solid #fff;
     width: 166px;
-    background-repeat: no-repeat;
     padding: 0px;
+    margin-top: 8px;
 }
 
 .hover-like {
