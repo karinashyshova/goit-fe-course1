@@ -54,12 +54,14 @@ input[type="radio"].visually-hidden{
 
 }
 
-.background {
+.back {
+    background-image: url(../img/rect.jpg);
     width: 100%;
-    opacity: 0.8;
-
+    height: 600px;
+    position: absolute;
+    opacity: 0.4;
+    z-index: 1;
 }
-
 
 .slider-title-list {
     list-style: none;
@@ -345,13 +347,13 @@ h2::after {
 
 
 .hover-list .hover-add-button {
-    background-image: url(../image/cart.png), url(../image/add.jpg);
     background-position: 10% 50%, 80% 50%;
     background-color: #323232; 
     border: 1px solid #fff;
     width: 166px;
     padding: 0px;
     margin-top: 8px;
+    background-image: url(../img/cart.png), url(../img/addto.png);
 }
 
 .hover-like {
